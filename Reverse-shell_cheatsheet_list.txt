@@ -1,0 +1,16 @@
+Reverse Shell Cheat Sheet
+  https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+    Includes:
+      Bash (linux) (.sh)
+      PERL (.pl)
+      Python 2.7 (.py)
+      PHP (.php)
+      Ruby (.rb)
+      Netcat (nc)
+      Java (.java)
+      xterm (linux) (terminal)
+      
+Payload-Alll-The-Things
+ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+  Includes:
+    

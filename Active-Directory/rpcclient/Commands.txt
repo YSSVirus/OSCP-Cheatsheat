@@ -1,0 +1,40 @@
+Command:
+  enumdomusers
+Output:
+  Lists all domain users
+  rid
+  
+Command:
+  querygroup <group-rid>
+Output:
+  Lists more info on the group
+
+Command:
+  queryuser <users-rid>
+Output:
+  Lists all user information
+ 
+Command:
+  querydominfo
+Output:
+  Lists all domain info
+  
+Command:
+  enumdomgroups
+Output:
+  Lists all domain groups
+  
+Command:
+  enumprivs
+Output:
+  Lists all privlages
+  
+Command:
+  getdompwinfo
+Output:
+  Domain password info
+  
+Command
+  getusrdompwinfo <User-rid>
+Output:
+  Domain users passwordd info

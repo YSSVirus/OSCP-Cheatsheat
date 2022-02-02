@@ -1,0 +1,97 @@
+Command -
+  whoami && ( set | findstr /i "PROCESSOR_ARCHITECTURE") && WHOAMI /PRIV
+Use:
+  View active username
+  View the system architecture (PROCESSOR_ARCHITECTUR)
+  List current user privlages (PRIVILEGES INFORMATION)
+ 
+Command -
+  whoami /all
+Use:
+  List current user information (USER INFORMATION)
+  List group info (GROUP INFORMATION)
+  List current user privlages (PRIVILEGES INFORMATION)
+  
+Command:
+  net user
+Use:
+  List all the users in the network (User accounts)
+  
+Command:
+  net group /domain
+Use:
+  This lists all of the groups on the network {Active Directory REQUIRED}
+
+Command:
+  systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+Use:
+  OS Name (the exact Operating System name) [Example:Microsoft Windows 10 Home]
+  OS Version (the exact OS version)
+  System type (system architecture)
+  
+Command
+  ipconfig /all
+Use:
+  Shows all network info (Windows IP Configuration)
+  Lists all adapters
+  Lists all adapter info
+  
+Command:
+  route print
+Use:
+  List all interfaces (Interface List)
+  Shows the networking routing tables.(IPv4 Route Table) (Persistent Routes) (IPv6 Route Table)
+
+Command:
+  netstat -a -f -n -o -q
+Use:
+  Lists all the current network connections. (Active Connections)
+  List network connection info
+
+{REQUIRES ADMIN!}
+Command:
+  netstat -a -f -n -o -q -b
+Use:
+  Lists all the current network connections and there associated executable (Active Connections)
+  List network connection info
+  
+Command:
+  netsh advfirewall firewall show rule name=all
+Use:
+  Lists all firewall rules
+  
+Command:
+  netstat -x
+Use:
+  List info about NetworkDirect. (Active NetworkDirect Connections, Listeners, SharedEndpoints) (~NetworkDirect is a user-mode programming interface specification for Remote Direct Memory Access (RDMA)~)
+  
+Command:
+  netstat -y
+Use:
+  This lists all active network connections
+  List network connection info
+  
+Command:
+  tasklist:
+Use:
+  Lists all tasks {Requires elvates privlages if not ran with them then it will only grab low level user proccesses}
+  includes Image Name, PID, Session Name, Session#, Mem Usage
+  
+Command:
+  taasklist /svc
+Use:
+  Lists all tasks {Requires elvates privlages if not ran with them then it will only grab low level user proccesses}
+  includes Image Name, PID, Services
+  
+Command:
+  tasklist /apps
+Use:
+  list all tasks {Requires elvates privlages if not ran with them then it will only grab low level user proccesses}
+  includes Image Name, PID, Mem Usage, Package Name 
+ 
+Command:
+  schtasks /query /fo LIST /v
+Use:
+  Lists all tasks
+
+ 

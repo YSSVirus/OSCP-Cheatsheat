@@ -94,4 +94,8 @@ Command:
 Use:
   Lists all tasks
 
- 
+Command:
+  type
+Use:
+  prints a file (types a file) (echo a file)
+

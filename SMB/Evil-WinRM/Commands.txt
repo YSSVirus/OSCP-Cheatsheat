@@ -1,0 +1,9 @@
+Command:
+  ls
+Output:
+  Lists files {NON hidden only}
+  
+Command:
+  ls -force
+Output
+  Lists all files {hidden included}

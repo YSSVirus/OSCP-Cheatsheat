@@ -1,0 +1,8 @@
+Group:
+  DnsAdmins
+Vulnerable:
+  Allows privlage escalation to admin
+  Catch a reverse shell
+  
+Group:
+  

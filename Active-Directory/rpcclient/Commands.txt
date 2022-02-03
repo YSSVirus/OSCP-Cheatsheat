@@ -13,6 +13,11 @@ Command:
   queryuser <users-rid>
 Output:
   Lists all user information
+  
+Command:
+  querygroupmem <group-rid>
+Output:
+  Lists members in group
  
 Command:
   querydominfo

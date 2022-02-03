@@ -1,0 +1,17 @@
+Command:
+  !!
+Output:
+  Shows previous command
+  
+Command:
+  ls -la
+Output:
+  List format
+  List files (including hidden)
+  
+Command:
+  ls -laR
+Output:
+  List format
+  List files (including hidden)
+  List recursivly

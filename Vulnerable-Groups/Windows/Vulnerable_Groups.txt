@@ -5,4 +5,9 @@ Vulnerable:
   Catch a reverse shell
   
 Group:
-  
+  AD Recycle Bin
+Vulnerable
+  Recon
+  Deleted file retrievel
+Commands:
+  Get-ADObject -filter 'isDeleted -eq $true -and name -ne "Deleted Objects"' -includeDeletedObjects

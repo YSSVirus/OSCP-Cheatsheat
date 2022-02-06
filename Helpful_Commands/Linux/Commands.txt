@@ -15,3 +15,27 @@ Output:
   List format
   List files (including hidden)
   List recursivly
+  
+Command:
+  awk '{print $1}'
+Output:
+(Example: In the command showed it only show the first field.)
+  strips out un-needed info
+  strip fields
+  
+Command:
+  grep 'searching\|for\|all\|these'
+Output:
+  (Example: In the command showed it only shows lines WITH the words your searching for.)
+  Highlights words
+  Finds words
+  info sorting
+
+Command:
+  grep -v 'searching\|for\|all\|these'
+Output:
+  (Example: In the command showed it only shows lines WITHOUT the words your searching for.)
+  Finds all but listed words
+  removes lines with cerain words
+  info sorting
+

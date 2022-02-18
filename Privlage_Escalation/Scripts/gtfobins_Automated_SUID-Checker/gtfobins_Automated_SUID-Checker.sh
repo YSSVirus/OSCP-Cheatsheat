@@ -1,4 +1,8 @@
 #! /bin/bash
+echo ''
+echo ''
+echo 'Thank you for using my Script! -YSSVirus'
+sleep 2
 clear
 program_name=$1
 Main_Function(){

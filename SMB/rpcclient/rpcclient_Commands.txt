@@ -1,0 +1,120 @@
+srvinfo -
+	This command will enumerate server info
+
+
+
+enumdomains -
+	This command will enumerate all domains
+
+
+
+querydominfo -
+	This command will enumerate current domain info
+
+		querydominfo {domain}
+			This command will enumerate any domains on the target
+
+
+dsroledominfo -
+	This command will enumerate primary domain info
+
+
+
+lookupdomain {domain} -
+	This command will enumerate the domain SID
+
+
+lsaquery -
+		This command will enumerate the domain name and enumerate the domain SID
+
+
+
+enumdomusers -
+	This command will enumerate all usernames on the domain
+
+		queryuser {rid} 
+			or
+		queryuser {username} -
+			This command will enumerate info about a specific user
+
+
+
+enumdomgroups -
+	This command will enumerate all domain groups and rid's for them
+
+		querygroup {rid} -
+			This command will enumerate info about a specific group
+
+
+
+lsaenumsid -
+	This command will enumerate all SIDs it can
+
+		lookupsids {SID} -
+			This command will enumerate the resolved SID
+
+				lsaenumacctrights {SID} -
+					This command will enumerate account rights 
+
+
+
+lookupname {username} {can-add-another-username} {or-even-another} -
+	This command will enumerate the SID for a user
+
+
+
+getdompwinfo -
+	This command will enumerate password security info
+
+		getusrdompwinfo {rid} - 
+			This command enumerate specific user password info
+
+
+
+enumalsgroups {alias_group} -
+	This command will enumerate alias groups
+
+
+
+enumprivs -
+	This command will enumerate privlages
+
+
+
+netshareenum -
+	This command will enumerate Net-Shares
+
+
+
+netshareenumall -
+	This command will enumerate all info about Net-Shares
+
+		netsharegetinfo {Net-Share_Name} -
+			This command will enumerate specific Net-Share names
+
+
+
+querydispinfo - 
+	This command will enumerate display info and enumerate active users
+
+
+
+	lsaquerysecobj - 
+		This command will enumerate all secrets on the system
+
+
+
+
+
+createdomuser {user-to-add} -
+	This command will execute adding a user
+
+
+
+createdomgroup {group-to-add} -
+	This command will execute adding a group
+
+
+
+lsaaddpriv {SID} {Privlage_Name} -
+	This command will execute adding a privlage to an SID

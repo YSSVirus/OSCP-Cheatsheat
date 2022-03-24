@@ -1,49 +1,77 @@
 URL:
   https://pentestblog.in/oscp/hack-the-box-htb-oscp-like-machines-list-2022/
-Platforms:
-  Hack The Box (HTB)
-Operating Systems:
-  Linux:
-    Networked
-    Safe
-    Writeup
-    Swagshop
-    Help
-    Irked
-    Postman
-    Teacher
-    Curling
-    Fralic
-    Sunday
-    Valentine
-    Nibble
-    Based
-    Sense
-    Shocker
-    Mirai
-    Blocky
-    Bank
-    Poison
-    BrainFuck*
-    CronO.S
-    Solid State
-    Tenten
-    Shrek
-    Friendzone
-    SecNotes
-  Windows:
-    Bastion
-    Netmon
-    Jerry
-    Blue
-    Optimum
-    Granny
-    Devel
-    Arctic
-    Active
-    Legacy
-    Sauna
-    Remote
-    Bastard
-    Heist
-    Silo
+
+  Platforms:
+    Hack The Box (HTB)
+
+  Operating Systems:
+    Linux:
+      Networked
+      Safe
+      Writeup
+      Swagshop
+      Help
+      Irked
+      Postman
+      Teacher
+      Curling
+      Fralic
+      Sunday
+      Valentine
+      Nibble
+      Based
+      Sense
+      Shocker
+      Mirai
+      Blocky
+      Bank
+      Poison
+      BrainFuck*
+      CronO.S
+      Solid State
+      Tenten
+      Shrek
+      Friendzone
+      SecNotes
+    Windows:
+      Bastion
+      Netmon
+      Jerry
+      Blue
+      Optimum
+      Granny
+      Devel
+      Arctic
+      Active
+      Legacy
+      Sauna
+      Remote
+      Bastard
+      Heist
+      Silo
+
+
+
+URL:
+  https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159
+
+  Platforms:
+    Hack The Box (HTB)
+
+  Operating System:
+    Linux:
+      Knife
+      Pit
+      Monitors
+      Dynstr
+      ScriptKiddie
+      Armageddon
+      Seal
+    Windows:
+      BreadCrumbs
+      Love
+      PivotAPI
+      Intelligence
+      Pikaboo
+      APT
+      Monteverde

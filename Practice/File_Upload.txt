@@ -1,11 +1,17 @@
 URL:
   https://portswigger.net/web-security/file-upload
   
+  Price:
+    Free
+  
   Type:
     Labs and Reading material
     
 URL:
   https://dtwh.medium.com/damn-vulnerable-web-application-dvwa-file-upload-walkthrough-bbb9743080cc
+  
+  Price:
+    Free
   
   Type:
     Reading material
@@ -13,11 +19,17 @@ URL:
 URL:
   https://github.com/LunaM00n/File-Upload-Lab
   
+  Price:
+    Free
+  
   Type:
     Lab
   
     URL:
       https://github.com/LunaM00n/File-Upload-Lab/blob/master/File%20Upload%20Attack.pdf
+  
+         Price:
+          Free
     
         Type:
           Reading material
@@ -25,11 +37,17 @@ URL:
 URL:
   http://thevectorlab.net/flatlab/file_upload.html
   
+  Price:
+    Free
+  
   Type:
     Lab
     
 URL:
   https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
+  
+  Price:
+    Free
   
   Type:
     Reading material
@@ -37,11 +55,26 @@ URL:
 URL:
   https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
   
+  Price:
+    Free
+  
   Type:
     Reading material
     
 URL:
   https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/
   
+  Price:
+    Free
+  
   Type:
     Reading material
+
+URL:
+  https://tryhackme.com/room/uploadvulns
+  
+  Price:
+    €8.00 ($8.80 USD) per month or €6.00 ($6.60 USD)/month annually  
+  
+  Type:
+    Labs and Reading material

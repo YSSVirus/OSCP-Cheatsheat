@@ -1,0 +1,35 @@
+URL:
+  https://portswigger.net/web-security/sql-injection
+  
+    Price:
+      Free
+  
+    Type:
+      Labs and Reading material
+      
+URL:
+  https://www.vulnspy.com/sqli-labs/
+    
+    Price:
+      Free
+  
+    Type:
+      Labs and Reading material
+      
+URL:
+  https://tryhackme.com/room/sqlilab
+  
+    Price:
+      Free
+  
+    Type:
+      Labs and Reading material
+      
+      URL:
+        https://infosecwriteups.com/sql-injection-lab-tryhackme-writeup-fcf30f846e82
+      
+        Type:
+          Reading material
+
+  
+  

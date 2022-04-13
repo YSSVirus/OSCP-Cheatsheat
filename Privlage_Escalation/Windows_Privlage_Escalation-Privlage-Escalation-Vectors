@@ -1,0 +1,18 @@
+Url:
+  https://rahmatnurfauzi.medium.com/windows-privilege-escalation-scripts-techniques-30fa37bd194
+    Vectors
+      Stored Credentials
+      Always Install Elevated
+      Auto-logon User Credential
+      Unquoted Service Path
+      Insecure File/Folder Permissions
+      Insecure Service Permissions
+      Token Manipulation
+      Group Policy Preferences
+      Insecure Registry Permissions
+      Windows Kernel Exploit
+      DLL Hijacking
+      DLL Injection
+      Insecure Named Pipes Permissions
+      User Account Control (UAC) Bypass
+      Unattended Answer File

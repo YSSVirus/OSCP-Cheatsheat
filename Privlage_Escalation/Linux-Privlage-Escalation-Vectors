@@ -1,0 +1,9 @@
+Url:
+  https://payatu.com/guide-linux-privilege-escalation
+   Vectors:
+    SUDO Right Exploitation
+    Exploiting services which are running as higher privilege's
+    Exploiting SUID Executables
+    Exploiting cron jobs
+    Exploiting users with ‘.’ in their PATH
+    Kernel Exploits

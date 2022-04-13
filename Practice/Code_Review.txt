@@ -1,0 +1,10 @@
+Url:
+  https://pentesterlab.com/exercises/codereview/course
+    Price:
+      Free
+        METHODOLOGIES:
+          String matching/Grep for bugs.
+          Following user input.
+          Reading source code randomly.
+          Read all the code.
+          Check one functionality at a time (login, password reset...).

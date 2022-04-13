@@ -1,0 +1,68 @@
+Url:
+  https://pentesterlab.com/exercises/codereview/course
+    Price:
+      Free
+        METHODOLOGIES:
+          String matching/Grep for bugs.
+            For example, you can use <>grep to find calls to the PHP system function.
+            You can find a list of regular expressions to try on your code base in the GRaudit project(https://github.com/wireghoul/graudit)
+              Pros:
+                Fastest way to find low-hanging fruits.
+                Find patterns of known vulnerabilities.
+              Cons:
+                You don't get a lot of coverage/assurance on the quality (and therefore security) of the source code. You just know that based on your list of
+                patterns, you couldn't find any issues.
+                You need to have knowledge of all the dangerous functions/patterns.
+                You end up using very complex regular expressions.
+              Overall:
+                This approach works pretty well for timeboxed reviews where you don't have enough time. It can also help you get familiar with a code base as part of a
+                longer review. However, it's probably not the best way to perform proper reviews.
+            
+          Following user input.
+            Follow all the user-controlled inputs and find all the ways to access the application (the routes/URI available). To get started you need to find all the
+            ways to provide data to the application
+              Pros:
+                Provides good coverage
+                Great at familiarizing yourself with all the software and hardware
+                Can uncover things you dont intend to which may lead to other vulnerabilities
+              Cons:
+                You will need a good understanding of the framework/language used.
+                You may end up reviewing the same function again and again if it's called multiple times.
+                Takes alot of time on larger targets
+              Overall:
+                This is a solid method as it has you follow user interaction which is where alot of weaknesses/vulnerabilities lie
+            
+          Reading source code randomly.
+            
+              Pros:
+                 
+              Cons:
+                
+            
+          Read all the code.
+            Just start reading the code one file at the time. A better way to do this is to try and find weaknesses, not vulnerabilities. From there, you can see if
+            the weaknesses can become vulnerabilities on their own or by combining them. Using this method also requires orgnaization
+              Pros:
+                Exellent coverage.
+                Great framiliarzation with the target
+                Most likely to find vulnerability/weakness
+              Cons:
+                Easy to lose where you are, have to much info (requires outstanding notes)
+                Takes an enormous amount of time.
+                Nearly impossible on large targets
+                Dont always have the source code
+              Overall:
+                This can be the best method if it is target, full code review is the most likely canidate for finding something.
+                
+          Check one functionality at a time (login, password reset...).
+            This approach gives you an excellent coverage for the functionality reviewed and will teach you what mistakes people typically make for a given
+            functionality. However, you only have coverage of what you reviewed.
+              Pros:
+                Full code review with less time
+                Great framiliarzation with the target
+              Cons:
+                Will only find where your looking
+                Not all source code is available
+              Overall:
+                This I would say is the best method as it targets problem areas and then you do a full code review of high incedent locations.
+            

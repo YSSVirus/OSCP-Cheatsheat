@@ -1,0 +1,82 @@
+#!/bin/bash
+dome_location=$(locate /dome.py)
+cargo_location=$(locate /cargo/)
+bash_profile_func(){
+	echo "export PATH=$PATH:~/go/bin" >> $bash_profile
+}
+cd ~/Downloads
+if [[ ! -f "~/go/bin/go" || ! -f "~/.go/bin/go" ]]; then
+	tar -xf go1.18.1.linux-amd64.tar
+	mv go ~
+	users_shell=$(env | grep "SHELL=")
+	if [[ $users_shell = "SHELL=/usr/bin/zsh" ]]; then
+		bash_profile=~/.zshrc
+		bash_profile_func
+	elif [[ $users_shell = "SHELL=/usr/bin/bash" || $users_shell = "SHELL=/usr/bin/rbash" ]]; then
+		bash_profile=~/.bash_profile
+		bash_profile_func
+	else
+		read "Im sorry you have an un detected SHELL type. What file does your SHELL pull your PATH from? Also if you could make an issue or a pull request with your SHELL path and where it stores the bash profile." -p bash_profile
+		bash_profile_func
+	fi
+fi
+if [ ! -f "/usr/bin/python3" ]; then
+	wget https://www.python.org/ftp/python/3.0/Python-3.0.tgz
+	tar -xf Python*
+	cd Python*
+	./configure --enable-optimizations --with-ensurepip=install
+	make -j 8
+	sudo make altinstall
+	cd ..
+fi
+if [ ! -f "~/go/bin/gau" ]; then
+	go install github.com/lc/gau/v2/cmd/gau@latest
+fi
+if [ ! -f "~/go/bin/waybackurls" ]; then
+	go install github.com/tomnomnom/waybackurls@latest
+fi
+if [ -z "$cargo_location" ]; then
+	cd cargo
+	python3 publish.py
+	cd ..
+fi
+if [ -z "dome_location" ]; then
+	git clone https://github.com/v4d1/Dome.git
+	cd Dome
+	pip install -r requirements.txt
+	cd ..
+fi
+if [ ! -f "/usr/bin/locate" ]; then
+	cargo install locate
+fi
+if [ ! -f "/usr/bin/awk" ]; then
+	git clone https://github.com/onetrueawk/awk.git
+	cd awk
+	sudo mv a.out /usr/bin/awk.
+	cd ..
+fi
+if [[ ! -f "~/go/bin/anew" || ! -f "~/.go/bin/anew" ]]; then
+	go install -v github.com/tomnomnom/anew@latest
+fi
+if [[ ! -f "~/go/bin/inscope" || ! -f "~/.go/bin/inscope" ]]; then
+	go install -u github.com/tomnomnom/hacks/inscope@latest
+fi
+if [[ ! -f "~/go/bin/fff" || ! -f "~/.go/bin/fff" ]]; then
+	go install -u github.com/tomnomnom/fff@latest
+fi
+if [[ ! -f "~/go/bin/puredns" || ! -f "~/.go/bin/puredns" ]]; then
+	go install github.com/d3mondev/puredns/v2@latest
+fi
+if [[ ! -f "~/go/bin/subfinder" || ! -f "~/.go/bin/subfinder" ]]; then
+	go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+fi
+if [[ ! -f "/usr/local/bin/dnsvalidator" || ! -f "/usr/local/bin/dnsvalidator" ]]; then
+	git clone https://github.com/vortexau/dnsvalidator.git
+	cd dnsvalidator
+	python3 setup.py install
+	cd ..
+fi
+clear
+echo "This installation has completed"
+echo "to use the in scope feature please make a .scope file and follow the rules located on the following page:"
+echo "https://github.com/tomnomnom/hacks/tree/master/inscope"

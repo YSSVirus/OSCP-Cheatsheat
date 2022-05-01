@@ -2,7 +2,7 @@
 #Here is where we define our variables that need to be pre defined
 #This a simple x value used for creating unique files then combining them 
 x=1 #this is where we simply store a number used later on in combining files
-first_arg=$1 # here is where we store the first arguent.... they act weird unless stored in a variable
+domain_value=$1 # here is where we store the first arguent.... they act weird unless stored in a variable
 urls_subfinder='subfinder.log' # this is more something for later it holds a frequently refrencedfiles value
 bruteforce_list=$2 #This is the list we will use fore brute forcing later
 
@@ -54,14 +54,21 @@ combine_logs(){
 	cd ../../
 }
 
-#Now the actual script starts
-#Making a directory for organization
-mkdir yssvirus_url-finder
-cd 'yssvirus_url-finder'
-echo 'Gathering results from subfinder'
-echo ''
+
+if [[ $domain_value = "-h" || $domain_value = "--h" || $domain_value = "-help" || $domain_value = "--help" || $bruteforce_list = "-h" || $bruteforce_list = "--h" || $bruteforce_list = "-help" || $bruteforce_list = "--help" ]]; then
+  	#statements  #Here is where we offer help
+	echo "bash script.sh <target or full file location> <full file location for bruteforce list>"
+	echo ""
+	echo "bash script.sh google.com /home/user/wordlists/domains.txt"
+	echo "bash script.sh /home/user/Targets/domain.list /home/user/wordlists/domains.txt"
 #this if then uses if the variable is not a file it continues if it is it goes to else
-if [ ! -f "$first_arg" ]; then
+elif [ ! -f "$domain_value" ]; then
+	#Now the actual script starts
+	#Making a directory for organization
+	mkdir yssvirus_url-finder
+	cd 'yssvirus_url-finder'
+	echo 'Gathering results from subfinder'
+	echo ''
 	#here we start gathering subdomains
 	puredns bruteforce $bruteforce_list $here --write puredns.log --resolvers-trusted resolvers.txt
 	subfinder -dL puredns.log -all -active -o subfinder.log
@@ -71,8 +78,13 @@ if [ ! -f "$first_arg" ]; then
 	here=$domain_value
 	dome_func
 	combine_logs
-elif test -f "$first_arg"; then
-	#statements
+elif test -f "$domain_value"; then
+	#Now the actual script starts
+	#Making a directory for organization
+	mkdir yssvirus_url-finder
+	cd 'yssvirus_url-finder'
+	echo 'Gathering results from subfinder'
+	echo ''
 	dnsvalidator -tL https://public-dns.info/nameservers.txt -timeout 7 -threads 20 -o resolvers.txt | sleep 300; killall dnsvalidator
 	mkdir puredns
 	while read -r here;
@@ -99,12 +111,8 @@ elif test -f "$first_arg"; then
 		here=clean # here it would assign blank value if it didnt start with http or https
 		if [ -z "$here" ]; then # here we check if its blank if it is we do the next instruction
 			here=$holder # remember when we had to store this this is why
+		fi
 		dome_func
 	done < $domain_value
 	combine_logs
-else  #Here is where we offer help
-	echo "bash script.sh <target or full file location> <full file location for bruteforce list>"
-	echo ""
-	echo "bash script.sh google.com /home/user/wordlists/domains.txt"
-	echo "bash script.sh /home/user/Targets/domain.list /home/user/wordlists/domains.txt"
 fi
